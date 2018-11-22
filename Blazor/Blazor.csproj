@@ -8,10 +8,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Pages\Todo.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Blazor.Browser" Version="0.6.0" />
     <PackageReference Include="Microsoft.AspNetCore.Blazor.Build" Version="0.6.0" PrivateAssets="all" />
 
     <DotNetCliToolReference Include="Microsoft.AspNetCore.Blazor.Cli" Version="0.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Pages\Todo.cshtml" />
   </ItemGroup>
 
 </Project>
